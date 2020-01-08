@@ -1,0 +1,138 @@
+﻿@page
+@model new3.Pages.Services.IndexModel
+
+@{
+    ViewData["Title"] = "Services";
+}
+
+<div class="col-sm-4">
+    <h1>REGISTER FOR 202O CLASSES</h1>
+    <h6>ALL CLASSES BEGIN JAN 5TH</h6>
+    <p>
+        <style>
+            .dropbtn {
+                background-color: #2196F3;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                    .dropdown-content a:hover {
+                        background-color: #f1f1f1
+                    }
+
+            .dropdown:hover .dropdown-content {
+                display: list-item;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: #3e8e41;
+            }
+        </style>
+    </p>
+</div>
+
+<ul>
+    <li class="col-sm-4">
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">CLASSES</a>
+        <div class="dropdown-content">
+            <a href="#">GED PREP</a>
+            <a href="#">HSED</a>
+            <a href="#">CONT ED</a>
+            <a href="#">EMPLOYED</a>
+            <a href="#">UNEMPLOYED</a>
+            <a href="#">CHILDCARE</a>
+        </div>
+    </li>
+
+
+</ul>
+
+<ul>
+    <li><a asp-page="Create">Register</a>
+    <li><a asp-page="/Services/Index">Services</a>
+    <li><a asp-page="/Mentors/Index">Mentors</a>
+
+    </li>
+
+
+
+
+    <li class="dropdown">
+
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color: #2196F3;
+                padding: 10px;
+            }
+
+            .grid-item {
+                background-color: rgba(255,255,255,0.8);
+                border: 1px solid rgba(0,0,0,0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+        </style>
+</ul>
+<p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <aside class=.grid-container>
+                @foreach (var item in Model.GED)
+                {
+
+
+                <aside class="grid-item">
+
+
+                    @item.STUDENTINFO|@item.CLASSES|@item.EMPLOYED|@item.Kenosha|@item.Racine|@item.Milwaukee
+
+                    <a asp-page="./Edit" asp-route-id="@item.VID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.VID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.VID">Delete</a>|
+                    
+                </aside>
+
+
+
+                }
+        </tbody>
+    </table>
+

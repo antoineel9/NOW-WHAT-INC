@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFI7Pdr5sUka+YyAVoZfpzQAAAAACAAAAAAAQZgAAAAEAACAAAAB6XnzAJJgNtySnQSB7iSMVNNUDdhby2KPvPpDiXNxv7AAAAAAOgAAAAAIAACAAAABt3bhUlvsEPDdWNQTYsKDvJY4Hbxx9VXerN5KEwUqZT4AAAAAI1qnCuI5707dwov1otXFf186hZpJU5eg1JE7JJFaL74JUELFmxjfTW/+Z8JPiuNz8ph2FO2mNV8mZfQONq8+a53teuzsbvGluoVmFtDAF6bGqcCH4HIrA+YrPkYI2f54Gv4GsClU244QY5tfO+pRvzMJUrsJpCCNWE7rV/x/t70AAAACu9IagE67cFHUXHCIhU1s9G4aqnCDOMK3XUSrKrWlErrSDPmXImq9+xQXI1ny6QUFo9+JB5u36tQUepplD+L5z</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=%28localdb%29\navistar_server%3bDatabase=NOWWHATINC%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
